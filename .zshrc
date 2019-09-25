@@ -1,8 +1,8 @@
-
+# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/juvitrac/.oh-my-zsh"
+export ZSH="/home/HyNeko/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -98,10 +98,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rmd="rm -rf"
-alias ll="ls -lGhap"
 alias la="ls -aGh"
-alias ls="ls -pGh"
-alias gflag="gcc -Wall -Wextra -Werror ~/Desktop/res/libft.a"
-alias gcc="gcc ~/Desktop/res/libft.a"
-alias norme="norminette */*"
-alias c='cd ~/Desktop'
+alias gflag='gcc -Wall -Wextra -Werror'
+alias intra='xdg-open https://intra.epitech.eu'
+alias norme='xdg-open https://epitech.eu/file/public/technical-documentations/'
+alias schedule='xdg-open https://intra.epitech.eu/planning'
