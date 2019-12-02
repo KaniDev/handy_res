@@ -1,10 +1,11 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export PATH=$HOME/bin:/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$PATH
+fpath+=("$HOME/.oh-my-zsh/themes/pure")
 # Path to your oh-my-zsh installation.
+
 export ZSH="/home/HyNeko/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
+# Set name of the theme to load --jcophdms- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -103,3 +104,13 @@ alias gflag='gcc -Wall -Wextra -Werror'
 alias intra='xdg-open https://intra.epitech.eu'
 alias norme='xdg-open https://epitech.eu/file/public/technical-documentations/'
 alias schedule='xdg-open https://intra.epitech.eu/planning'
+alias lock='gnome-screensaver-command -l'
+alias bli='blih -u jules.vitrac@epitech.eu repository'
+alias gc='git commit -m'
+alias cs='ruby ~/.norminette/NormEZ.rb'
+alias cp='cp -r'
+alias mklib='cd lib/my/ && make all && cd -'
+alias cleanlib='cd lib/my/ && make fclean && cd -'
+alias fixdns='sudo cp -rf $HOME/.rsconf /run/resolvconf'
+alias pure="autoload -U promptinit; promptinit && prompt pure && PROMPT='%(?.%F{blue}>.%F{red}>)%f '"
+alias starwars4='telnet towel.blinkenlights.nl'
