@@ -1,15 +1,16 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$PATH
-fpath+=("$HOME/.oh-my-zsh/themes/pure")
+export PATH=$HOME/.blih:$HOME/scripts:/usr/local/lib:/sbin:$PATH
+fpath+=$HOME/.pure
+autoload -U promptinit; promptinit
+prompt pure && prompt='%(?.%F{blue}>.%F{red}>)%f '
+
 # Path to your oh-my-zsh installation.
+export ZSH="/home/hyneko/.oh-my-zsh"
 
-export ZSH="/home/HyNeko/.oh-my-zsh"
-
-# Set name of the theme to load --jcophdms- if set to "random", it will
+# Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -95,22 +96,18 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias rmd="rm -rf"
-alias la="ls -aGh"
-alias gflag='gcc -Wall -Wextra -Werror'
-alias intra='xdg-open https://intra.epitech.eu'
-alias norme='xdg-open https://epitech.eu/file/public/technical-documentations/'
-alias schedule='xdg-open https://intra.epitech.eu/planning'
-alias lock='gnome-screensaver-command -l'
+alias sudo='sudo '
 alias bli='blih -u jules.vitrac@epitech.eu repository'
+alias rmd='rm -rf'
+alias myepi='xdg-open https://my.epitech.eu'
+alias intra='xdg-open intra.epitech.eu'
+alias la='ls -aGh'
 alias gc='git commit -m'
-alias cs='ruby ~/.norminette/NormEZ.rb'
+alias gpl='git pull'
+alias gl='git log'
+alias gsl='git shortlog'
+alias cs='ruby $HOME/.normez/NormEZ.rb'
 alias cp='cp -r'
 alias mklib='cd lib/my/ && make all && cd -'
 alias cleanlib='cd lib/my/ && make fclean && cd -'
-alias fixdns='sudo cp -rf $HOME/.rsconf /run/resolvconf'
-alias pure="autoload -U promptinit; promptinit && prompt pure && PROMPT='%(?.%F{blue}>.%F{red}>)%f '"
-alias starwars4='telnet towel.blinkenlights.nl'
+alias acpi_listen='systemctl start acpid.service && acpi_listen'

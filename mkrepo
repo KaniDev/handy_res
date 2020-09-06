@@ -1,0 +1,3 @@
+blih -u jules.vitrac@epitech.eu repository create $1
+blih -u jules.vitrac@epitech.eu repository setacl $1 ramassage-tek r
+git clone git@git.epitech.eu:/jules.vitrac@epitech.eu/$1 $2

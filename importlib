@@ -1,0 +1,4 @@
+cp -r $HOME/res/Makefile .
+cp -r $HOME/res/lib .
+cp -r $HOME/res/.gitignore .
+cp -r $HOME/res/.vscode .
