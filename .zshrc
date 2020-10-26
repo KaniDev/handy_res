@@ -1,10 +1,10 @@
 export PATH=$HOME/.blih:$HOME/scripts:/usr/local/lib:/sbin:$PATH
-fpath+=$HOME/.pure
 autoload -U promptinit; promptinit
-prompt pure && prompt='%(?.%F{blue}>.%F{red}>)%f '
+prompt pure
+PROMPT='%(?.%F{cyan}.%F{red})❯%f '
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/hyneko/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -102,6 +102,10 @@ alias rmd='rm -rf'
 alias myepi='xdg-open https://my.epitech.eu'
 alias intra='xdg-open intra.epitech.eu'
 alias la='ls -aGh'
+alias ls='ls -FGh'
+alias l='ls -laFh'
+alias ll='ls -lFh'
+alias gc='git commit -m'
 alias gc='git commit -m'
 alias gpl='git pull'
 alias gl='git log'
@@ -110,4 +114,3 @@ alias cs='ruby $HOME/.normez/NormEZ.rb'
 alias cp='cp -r'
 alias mklib='cd lib/my/ && make all && cd -'
 alias cleanlib='cd lib/my/ && make fclean && cd -'
-alias acpi_listen='systemctl start acpid.service && acpi_listen'
